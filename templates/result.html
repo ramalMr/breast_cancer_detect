@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nəticə</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Nəticə</h1>
+    <p>{{ result }}</p>
+    <p>VGG16 modeli: {{ vgg16_pred }}</p>
+    <p>ResNet50 modeli: {{ resnet50_pred }}</p>
+    <p>Inception modeli: {{ inception_pred }}</p>
+    <a href="/">Yenidən yoxla</a>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
